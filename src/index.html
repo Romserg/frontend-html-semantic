@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <h1>
-        <strong>Основы HTML</strong>
-    </h1>
+    <h1> Основы HTML </h1>
     <ol>
         <li><a href="#whatIsHtml">Что такое HTML на самом деле?</a>
             <ul>
@@ -25,10 +23,10 @@
 
         <li><a href="#shortInfo">Краткое описание элемента &lt;html&gt;&lt;/html&gt;</a>
             <ul>
-                <li><a href="">Атрибуты</a></li>
+                <li><a href="#attr">Атрибуты</a></li>
             </ul>
         </li>
-        <li><a href="">Заключение</a></li>
+        <li><a href="#final">Заключение</a></li>
     </ol>
     <q>
         HTML (HypertextMarkupLanguage) - это код, который используется для структурирования и отображения веб-страницы и ее контента.
@@ -37,7 +35,7 @@
         даст вам базовое понимание HTML и его функций. 
     </q>
 
-    <h2> <a name="whatIsHtml"></a>Что такое HTML на самом деле? </h2>
+    <h2 id="whatIsHtml">Что такое HTML на самом деле? </h2>
 
     <p>HTML не является языком программирования; это язык разметки, и используется, чтобы сообщать вашему браузеру как отображать
         веб-страницы, которые вы посещаете. Он может быть сложным или простым, в зависимости от того, как хочет веб-дизайнер.
@@ -57,7 +55,7 @@
        &lt;p&gt;My cat is very grumpy&lt;/p&gt;
     </code>
 
-    <h3><a name="anatomyHtml1"></a><strong>Анатомия HTML элемента</strong></h3>
+    <h3 id="anatomyHtml1">Анатомия HTML элемента</h3>
 
     <p>Давайте рассмотрим &lt;p&gt; элемент параграфа более подробно.</p>
 
@@ -97,7 +95,7 @@
         <li>Открывающие и закрывающие кавычки, обернутые вокруг значения атрибута</li>
     </ol>
 
-    <h3><a name="includeEl"></a><strong>Вложенные элементы</strong></h3>
+    <h3 id="includeEl">Вложенные элементы</h3>
 
     <p>Вы также можете располагать элементы внутри других элементов — это называется <strong>вложением</strong>. Если мы хотим
         заявить, что наша кошка ОЧЕНЬ раздражена, мы можем обернуть слово "very" в &lt;strong&gt; элемент, это означает,
@@ -118,7 +116,7 @@
         как в примере выше, тогда ваш веб-браузер будет пытаться сделать наилучшее предположение на то, что вы пытались сказать,
         и вы также можете получить непредсказуемые результаты. Так что не стоит этого делать!</p>
 
-    <h3><a name="emptyEl"></a>Пустые элементы</h3>
+    <h3 id="emptyEl">Пустые элементы</h3>
 
     <p>Некоторые элементы не имеют контента, и называются пустыми элементами. Возьмем &lt;img&gt; элемент, который мы уже имеем
         в нашем HTML: </p>
@@ -130,14 +128,14 @@
         элемент изображения не оборачивает контент для влияния на него. Его целью является вставка изображения в HTML страницу,
         и оказывается в нужном месте.</p>
 
-    <h3><a name="anatomyHtml2"></a>Анатомия HTML документа</h3>
+    <h3 id="anatomyHtml2">Анатомия HTML документа</h3>
 
     <p>Это завершает основы отдельных HTML элементов, но они не очень полезны сами по себе. Теперь мы будем смотреть, как отдельные
         элементы объединяются в целую HTML страницу. Давайте вернемся к коду, который мы вкладывали в наш index.html пример
         (с которым мы в первые встретились в статье Работа с файлами):</p>
 
     <p>Здесь мы имеем:</p>
-    
+
     <ul>
 
         <li><strong>&lt;!DOCTYPE html&gt;</strong> — доктайп. В прошлом, когда HTML был молод (около 1991/2), доктайпы должны
@@ -164,35 +162,35 @@
             ее в закладки/избранное.</li>
     </ul>
 
-    <h2><a name="shortInfo"></a>Краткое описание элемента &lt;html&gt;&lt;/html&gt;</h2>
+    <h2 id="shortInfo">Краткое описание элемента &lt;html&gt;&lt;/html&gt;</h2>
     <p>Корневой элемент HTML-документа (&lt;html&gt;). Все остальные элементы должны быть потомками этого элемента.</p>
     <table>
         <tr>
-            <td><strong>Content categories</strong></td>
+            <th>Content categories</th>
             <td>None.</td>
         </tr>
         <tr>
-            <td><strong>Допустимое содержимое</strong></td>
+            <th>Допустимое содержимое</th>
             <td>Один элемент &lt;head&gt;, а за ним — один элемент &lt;body&gt;</td>
         </tr>
         <tr>
-            <td><strong>Tag omission</strong></td>
+            <th>Tag omission</th>
             <td>The start tag may be omitted if the first thing inside the &lt;html&gt; element is not a comment. The end tag
                 may be omitted if the &lt;html&gt; element is not immediately followed by a comment, and it contains a &lt;body&gt;
                 element either that is not empty, or whose start tag is present.
             </td>
         </tr>
         <tr>
-            <td><strong>Допустимые родительские элементы</strong></td>
+            <th>Допустимые родительские элементы</th>
             <td>As the root element of a document, or wherever a subdocument fragment is allowed in a compound document.</td>
         </tr>
         <tr>
-            <td><strong>Интерфейс DOM</strong></td>
+            <th>Интерфейс DOM</th>
             <td>HTMLHtmlElement</td>
         </tr>
     </table>
 
-    <h3>Атрибуты</h3>
+    <h3 id="attr">Атрибуты</h3>
 
     <dl>
         <dt>manifest</dt>
@@ -209,9 +207,10 @@
 
     </dl>
 
-    <h2>Заключение</h2>
+    <h2 id="final">Заключение</h2>
 
-    <p>Полные версии сайтов можно найти по ссылкам <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics">Основы HTML</a>        и <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/html">Элемент &lt;html&gt;</a></p>
+    <p>Полные версии сайтов можно найти по ссылкам <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            target="_blank">Основы HTML</a> и <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/html" target="_blank">Элемент &lt;html&gt;</a></p>
 
 </body>
 
